@@ -1,6 +1,6 @@
 /*
-Theme Name: Hiyield Theme
-Author: Alfie Phillips
+Theme Name: hiyield_theme
+Author: alfiephillips
 Description: Custom theme for Hiyield Challenge
 Version: 1.0
 */
@@ -15,6 +15,10 @@ html {
 }
 
 h2 {
+    color: white;
+}
+
+h3 {
     color: whitesmoke;
     font-weight: 700;
 }
