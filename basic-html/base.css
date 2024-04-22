@@ -1,0 +1,13 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #2C3437;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: whitesmoke;
+    font-weight: 700;
+}
