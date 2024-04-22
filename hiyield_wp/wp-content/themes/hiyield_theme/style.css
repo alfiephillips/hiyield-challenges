@@ -14,11 +14,15 @@ html {
     font-family: sans-serif;
 }
 
-h2 {
-    color: white;
+.zoom-image {
+    transition: transform 0.3s ease-in-out;
 }
 
-h3 {
-    color: whitesmoke;
-    font-weight: 700;
+.zoom-image img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-image:hover img {
+    transform: scale(1.1);
 }

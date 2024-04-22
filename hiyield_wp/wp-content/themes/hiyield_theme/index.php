@@ -18,21 +18,31 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <!-- I experimented with the line below for a while since when the title breaks two lines, it moves the flex wrapper upwards
                     so the images aren't aligned horizontally. I found out that setting minimum and maximums is very important and is good for being responsive -->
-                    <div class="w-full md:w-1/2 lg:w-1/3 px-4 py-8 flex flex-col max-h-[400px]">
+                    <a href="<?php the_permalink() ?>" class="w-full md:w-1/2 lg:w-1/3 mb-10 px-4 py-8 flex flex-col lg:max-h-[400px] md:max-h-[300px]"> <!-- Change to an A tag to encapsulate the object so it becomes clickable -->
+                        <div style="font-weight: 700;" class="absolute rounded-full text-5xl text-pink-400 z-50">
+                            <?php echo ($wp_query->current_post + 1 > 9) ? $wp_query->current_post + 1 : "0" . ($wp_query->current_post + 1); ?>
+                        </div>
                         <!-- Organizing the content into columns, taking up full height available -->
-                        <div class="flex flex-col h-full justify-start">
+                        <!-- Stuck on zooming in on just the image, not enlarging the image as a whole including the border etc -->
+                        <div class="flex flex-col h-full justify-start zoom-image">
                             <?php if (has_post_thumbnail()) : ?>
                                 <!-- Set a border to let the photo stand out, a bit of margin to seperate text from image -->
-                                <img class="border-solid border-2 border-white-700 mb-2 w-full" src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>" />
+                                <img class="border-solid border-2 border-white-700 mb-2 w-full object-cover" src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>" />
                             <?php endif; ?>
                             <!-- This is key for ensuring the text takes up all available space after the image -->
+                            <!-- Stuck on changing text color on hover of the object as a whole -->
                             <div class="flex-1">
-                                <h2><?php echo get_the_date() ?></h2>
-                                <h3><?php the_title(); ?></h3>
-                                <p><a href="<?php the_permalink(); ?>" class="text-red-500 hover:text-blue-500">View Portfolio</a></p>
+                                <h2 style="color: lightgrey; font-weight: 400;">
+                                    <!-- Concatenation of the author, date and reading time. Delimiter: &middot--> 
+                                    <?php 
+                                        echo get_the_author() . " &middot; " . get_the_date() . " &middot; " . 
+                                        (reading_time() == 0 ? "No post content yet!" : reading_time() . " min read");
+                                    ?>
+                                </h2>
+                                <h3 style="font-weight: 700;" class="text-pink-400 text-lg"><?php the_title(); ?></h3>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 <?php endwhile; endif ?>
             </div>
         </div>
