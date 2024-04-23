@@ -17,6 +17,11 @@ I'm also interested how Hiyield integrates the commitment to environmental facto
 - **Responsibilities**: **What are the specific responsibilities an Apprentice would have in terms of the typical tasks they would undertake
 daily and how would this contribute to the broader scope of a project? Also, i'm intrigued to find out about guidance and supervision. As skills develop,
 will the apprentice have progressive responsibility for a task or will there always be an opportunity for mentorship and assistance?**
+
+- **Development Life Cycle**: I noticed on your website you have recently completed collaborations with BizSpace and Stowable.
+**How is a bespoke solution such as these developed from conception to launch. Hence, could you please walk me through the development life cycle at Hiyield and
+what is considered?**
+
 ## Details
 
 **Responsive HTML and CSS Page**
