@@ -36,6 +36,10 @@ function reading_time() {
     return $reading_time;
 }
 
+// There is an alternative approach to this where you can write a database function
+// to calculate the reading time on creation, rather than running a hefty process on every load.
+// However, I'm also considering that the post may be updated which would make the original method more efficient for showing the reading time.
+
 // Add the function to the wp_enqueue_scripts action hook
 add_action('wp_enqueue_scripts', 'enqueue_styles_and_scripts');
 ?>
