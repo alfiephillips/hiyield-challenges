@@ -31,5 +31,5 @@ This repository showcases my solutions to the Hiyield Apprenticeship Challenge, 
 - **Bcorp**: I'm very interested in your association with Bcorp and the benefits it brings for both your team and the clients.
 The committment to sustainability and being ethical in business is something i'm invested into, it's a very powerful tool
 for building trust and loyalty with clients when developing a new product - I believe this is most important having a postive
-relationship with the client. **Could you share how this certification influences your development life cycle of a project.
+relationship with the client. **Could you share how this certification influences the development life cycle of a project.
 I'm also interested how Hiyield integrates the commitment to environmental factors on a day-to-day basis.**
