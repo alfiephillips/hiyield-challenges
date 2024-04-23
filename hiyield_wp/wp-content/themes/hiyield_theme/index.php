@@ -11,7 +11,7 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <!-- Responsive container with slight padding for centering-->
+        <!-- Responsive container -->
         <div class="container mx-auto px-0">
             <!-- Flex wrapper to default to center when a row is not filled -->
             <div class="flex flex-wrap justify-center items-center text-left">
