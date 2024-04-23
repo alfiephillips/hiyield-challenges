@@ -14,7 +14,10 @@ for building trust and loyalty with clients when developing a new product - I be
 relationship with the client. **Could you share how this certification influences the development life cycle of a project.
 I'm also interested how Hiyield integrates the commitment to environmental factors on a day-to-day basis.**
 
-## Details
+- **Responsibilities**: **What are the specific responsibilities an Apprentice would have in terms of the typical tasks they would undertake
+daily and how this contributes to the broader scope of a project. Also, i'm intrigued to find out about guidance and supervision. As skills develop,
+will the apprentice have progressive responsibility for a task or will there always be an opportunity for mentorship and assistance.
+## Details**
 
 **Responsive HTML and CSS Page**
 - Developed using Tailwind CSS to ensure responsiveness across different devices.
