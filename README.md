@@ -21,16 +21,3 @@ will the apprentice have progressive responsibility for a task or will there alw
 - **Development Life Cycle**: I noticed on your website you have recently completed collaborations with BizSpace and Stowable.
 **How is a bespoke solution such as these developed from conception to launch. Hence, could you please walk me through the development life cycle at Hiyield and
 what is considered?**
-
-## Details
-
-**Responsive HTML and CSS Page**
-- Developed using Tailwind CSS to ensure responsiveness across different devices.
-- Utilized Lorum Picsum for dynamic image content, demonstrating the ability to integrate third-party resources.
-
-**Custom WordPress Theme**
-- Transformed the responsive HTML page into a WordPress theme, maintaining design integrity and functionality within the WordPress ecosystem.
-- Custom theme development highlights the ability to adapt static HTML/CSS into dynamic WordPress templates.
-
-**Dynamic WordPress Content Integration**
-- Enhanced the theme to display blog posts dynamically. This involves fetching data from WordPress and rendering it within a custom layout, further proving skills in PHP and WordPress backend development.
