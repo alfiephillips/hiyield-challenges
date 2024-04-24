@@ -18,12 +18,11 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <!-- I experimented with the line below for a while since when the title breaks two lines, it moves the flex wrapper upwards
                     so the images aren't aligned horizontally. I found out that setting minimum and maximums is very important and is good for being responsive -->
-                    <a href="<?php the_permalink() ?>" class="w-full md:w-1/2 lg:w-1/3 mb-10 px-4 py-8 flex flex-col group"> <!-- Change to an A tag to encapsulate the object so it becomes clickable -->
+                    <a href="<?php the_permalink() ?>" class="w-full md:w-1/2 lg:w-1/3 mb-10 px-4 py-8 flex flex-col group">
                         <div style="font-weight: 700;" class="relative top-[25px] right-[20px] rounded-full text-5xl text-pink-400 z-50">
                             <?php echo ($wp_query->current_post + 1 > 9) ? $wp_query->current_post + 1 : "0" . ($wp_query->current_post + 1); ?>
                         </div>
                         <!-- Organizing the content into columns, taking up full height available -->
-                        <!-- Stuck on zooming in on just the image, not enlarging the image as a whole including the border etc -->
                         <div class="flex flex-col h-full justify-start zoom-image">
                             <?php if (has_post_thumbnail()) : ?>
                                 <!-- Set a border to let the photo stand out, a bit of margin to seperate text from image -->
@@ -32,7 +31,6 @@
                                 </div>
                             <?php endif; ?>
                             <!-- This is key for ensuring the text takes up all available space after the image -->
-                            <!-- Stuck on changing text color on hover of the object as a whole -->
                             <div class="flex-1">
                                 <h2 style="color: lightgrey; font-weight: 400;">
                                     <!-- Concatenation of the author, date and reading time. Delimiter: &middot--> 

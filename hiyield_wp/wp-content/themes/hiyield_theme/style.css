@@ -5,11 +5,11 @@ Description: Custom theme for Hiyield Challenge
 Version: 1.0
 */
 
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
     background-color: #2C3437;
     font-family: sans-serif;
 }
