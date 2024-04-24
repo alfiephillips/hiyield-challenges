@@ -36,6 +36,9 @@ function reading_time() {
     return $reading_time;
 }
 
+// You could also write a database function to this so the processing is only applied once and the result is saved as the blogs reading time.
+// This would end up being a substantial factor towards becoming a more sustainable project as the hefty process wouldn't be loaded every time a user visits the page.
+
 // Add the function to the wp_enqueue_scripts action hook
 add_action('wp_enqueue_scripts', 'enqueue_styles_and_scripts');
 ?>
